@@ -6,7 +6,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: "https://joyful-cactus-5c7f93.netlify.app/", credentials: true }));
+app.use(cors({ origin: "https://joyful-cactus-5c7f93.netlify.app", credentials: true }));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
