@@ -1,9 +1,6 @@
 const dotenv = require("dotenv");
 dotenv.config();
-
-
-
-
+const jwt = require("jsonwebtoken");
 const JWT_SECRET = process.env.JWT_SECRET; // Change this in production!
 
 const authenticateUser = (req, res, next) => {
